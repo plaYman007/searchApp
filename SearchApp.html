@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="SearchApp.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Smart Search</h1>
+    <div id="app">
+      <input
+        type="text"
+        id="repo-search"
+        placeholder="Поиск репозиториев GitHub..."
+      />
+      <div class="autocomplete-container">
+        <ul class="autocomplete-list"></ul>
+      </div>
+      <ul class="repo-list"></ul>
+    </div>
+    <script src="SearchApp.js"></script>
+  </body>
+</html>

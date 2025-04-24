@@ -1,0 +1,79 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+}
+
+#repo-search {
+  width: 400px;
+  height: 20px;
+  margin-top: 10px;
+  overflow-y: auto;
+  border-radius: 5px;
+}
+
+#repo-search:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.autocomplete-container {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  display: none;
+  background-color: white;
+  width: 400px;
+  z-index: 10;
+}
+
+.autocomplete-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.autocomplete-list li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.autocomplete-list li:hover {
+  background-color: #f0f0f0;
+}
+
+.repo-list {
+  margin-top: 180px;
+  list-style: none;
+  padding: 0;
+}
+
+.repo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+button {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 6px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c0392b;
+}
